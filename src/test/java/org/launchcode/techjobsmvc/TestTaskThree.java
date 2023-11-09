@@ -73,7 +73,7 @@ public class TestTaskThree {
         Class searchControllerClass = Class.forName("org.launchcode.techjobsmvc.controllers.SearchController");
         Method displaySearchResultsMethod = searchControllerClass.getMethod("displaySearchResults", Model.class, String.class, String.class);
         Parameter[] parameters = displaySearchResultsMethod.getParameters();
-        assertEquals("searchType", parameters[1].getName());
+        assertEquals("searchTerm", parameters[1].getName());
         assertEquals("searchTerm", parameters[2].getName());
     }
 
